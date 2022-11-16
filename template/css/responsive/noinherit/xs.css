@@ -1,0 +1,81 @@
+body:not(.show-hidden) .xs-hide{
+    display: none !important;
+}
+.inrow.xs-left .incol.first{
+margin-left: 0 !important; 
+margin-top: 0 !important; 
+margin-bottom: 0 !important; 
+}
+.inrow.xs-center .incol.first{
+margin-left: 0 !important; 
+margin-right: 0 !important; 
+margin-top: 0 !important; 
+align-self:center;
+justify-content: center;
+}
+.inrow.xs-right .incol.first{
+margin-right: 0 !important; 
+margin-top: 0 !important; 
+margin-bottom: 0 !important; 
+}
+
+/**
+ * menu views
+ */
+ .xs-drop{
+    text-align: right;
+ }
+ .xs-drop .navcon {
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+    width: auto;
+}
+ .xs-vert .navcon{
+    width:auto;
+ }
+  .xs-vert .nav{
+    display: inline-flex;
+    flex-direction: column;
+ }
+ .xs-drop .nav {
+    display: inline-flex;
+    flex-direction: column;
+	position: absolute;
+	top: 100%;
+    left: 0;
+    right: unset;
+    z-index: 202;
+    background-color: rgb(255, 255, 255);
+}
+  .xs-drop .nav{
+    display:none;
+ }
+ .xs-drop.xs-right .nav{
+    right:0;
+    left:unset;
+ }
+   .xs-drop.active .nav{
+    display:block;
+ }
+.xs-subright {
+	left: auto;
+	right: 0;
+}
+.xs-vert .subnav, .xs-drop .subnav {
+	top: 0;
+	left: 100%;
+    right: auto;
+}
+.xs-vert .subnav.xs-subleft {
+	left: auto;
+    right: 100%;
+}
+  .xs-drop a.toggle{
+    display: block;
+    align-self: end;
+ }
+ .xs-drop .subnav {
+	position: static;
+	width: 100% !important;
+}

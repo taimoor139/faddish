@@ -1,0 +1,366 @@
+.col-xs,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  box-sizing: border-box;
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+.col-xs {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.col-xs-1 {
+  -ms-flex-preferred-size: 8.333%;
+  flex-basis: 8.333%;
+  max-width: 8.333%;
+}
+
+.col-xs-2 {
+  -ms-flex-preferred-size: 16.667%;
+  flex-basis: 16.667%;
+  max-width: 16.667%;
+}
+
+.col-xs-3 {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-xs-4 {
+  -ms-flex-preferred-size: 33.333%;
+  flex-basis: 33.333%;
+  max-width: 33.333%;
+}
+
+.col-xs-5 {
+  -ms-flex-preferred-size: 41.667%;
+  flex-basis: 41.667%;
+  max-width: 41.667%;
+}
+
+.col-xs-6 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  -ms-flex-preferred-size: 58.333%;
+  flex-basis: 58.333%;
+  max-width: 58.333%;
+}
+
+.col-xs-8 {
+  -ms-flex-preferred-size: 66.667%;
+  flex-basis: 66.667%;
+  max-width: 66.667%;
+}
+
+.col-xs-9 {
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-xs-10 {
+  -ms-flex-preferred-size: 83.333%;
+  flex-basis: 83.333%;
+  max-width: 83.333%;
+}
+
+.col-xs-11 {
+  -ms-flex-preferred-size: 91.667%;
+  flex-basis: 91.667%;
+  max-width: 91.667%;
+}
+
+.col-xs-12 {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.333%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.667%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.333%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.667%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.333%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.667%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.333%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.667%;
+}
+
+.start-xs {
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.center-xs {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.end-xs {
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.top-xs {
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.middle-xs {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.bottom-xs {
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+.around-xs {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.between-xs {
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.first-xs {
+  -ms-flex-order: -1;
+  -webkit-box-ordinal-group: 0;
+  order: -1;
+}
+
+.last-xs {
+  -ms-flex-order: 1;
+  -webkit-box-ordinal-group: 2;
+  order: 1;
+}
+.xs20{
+    width:20% !important;
+}
+.xs25{
+    width:25% !important;
+}
+.xs33{
+    width:33% !important;
+}
+.xs40{
+    width:40% !important;
+}
+.xs50{
+    width:50% !important;
+}
+.xs60{
+    width:60% !important;
+}
+.xs66{
+    width:66% !important;
+}
+.xs75{
+    width:75% !important;
+}
+.xs80{
+    width:80% !important;
+}
+.xs100{
+    width:100% !important;
+}
+ 
+.xs-20{
+    width:20% !important;
+}
+.xs-25{
+    width:25% !important;
+}
+.xs-33{
+    width:33% !important;
+}
+.xs-40{
+    width:40% !important;
+}
+.xs-50{
+    width:50% !important;
+}
+.xs-60{
+    width:60% !important;
+}
+.xs-66{
+    width:66% !important;
+}
+.xs-75{
+    width:75% !important;
+}
+.xs-80{
+    width:80% !important;
+}
+.xs-100{
+    width:100% !important;
+}
+/**
+ * Menu align
+ */
+ .xs-left{
+justify-content:start;  
+}
+.xs-center{
+justify-content:center;  
+}
+.xs-right{
+justify-content:end;  
+}
+.xs-justify>*{
+flex: auto;
+text-align: center;
+}
+/**
+ * align imagebox
+ */
+.inrow.xs-center{
+  flex-direction: column;  
+}
+.inrow.xs-right{
+flex-direction: row-reverse;
+}
+.inrow.xs-left{
+  flex-direction: row;  
+}
+
+
+/**
+ * absolute align
+ */
+ .xs-ableft{
+    left:0;
+ }
+  .xs-abcenter{
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+ }
+  .xs-abright{
+    right:0;
+ }
+ 
+ .sitekly-col .box-row .sitekly-edit.xs-inline, .sitekly-edit.xs-inline {
+	margin-top: 0;
+    display: inline-flex;
+    width:auto;
+}
+.sitekly-edit.xs-block {
+	width: 100% !important;
+	margin-left: 0 !important;
+}
+.xs-scroll{
+	background-attachment: fixed !important;
+    --scroll-speed:6;
+}
+.xs-js-right{
+	margin-left: auto;
+    margin-right: unset;
+}
+.xs-js-center{
+	margin-left: auto;
+    margin-right: auto;
+}
+.xs-stretch{
+ --bg-stretch: 1;   
+}
+.xs-no-stretch{
+ --bg-stretch: 0;   
+}
+.xs-m10{
+    margin-left:-10px;
+}
+.xs-m20{
+    margin-left:-20px;
+}
+.xs-m30{
+    margin-left:-30px;
+}
+.xs-m40{
+    margin-left:-40px;
+}
+.xs-m10 .icol{
+padding-left:10px;    
+}
+.xs-m20 .icol{
+padding-left:20px;    
+}
+.xs-m30 .icol{
+padding-left:30px;    
+}
+.xs-m40 .icol{
+padding-left:40px;    
+}

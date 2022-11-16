@@ -1,0 +1,14 @@
+[19-Sep-2022 02:10:53 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: RecursiveDirectoryIterator::__construct(/home/faddishbuilder/public_html/storage.faddishbuilder.com/whmkd6ce5v3oiafk/): failed to open dir: No such file or directory in /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php:257
+Stack trace:
+#0 /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php(257): RecursiveDirectoryIterator->__construct('/home/faddishbu...')
+#1 /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php(29): manager->space()
+#2 /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php(8): manager->run()
+#3 {main}
+  thrown in /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php on line 257
+[19-Sep-2022 02:11:22 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: RecursiveDirectoryIterator::__construct(/home/faddishbuilder/public_html/storage.faddishbuilder.com/whmkd6ce5v3oiafk/): failed to open dir: No such file or directory in /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php:257
+Stack trace:
+#0 /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php(257): RecursiveDirectoryIterator->__construct('/home/faddishbu...')
+#1 /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php(29): manager->space()
+#2 /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php(8): manager->run()
+#3 {main}
+  thrown in /home/faddishbuilder/public_html/storage.faddishbuilder.com/manager.php on line 257

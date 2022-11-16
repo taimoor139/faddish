@@ -1,0 +1,2 @@
+[<?php echo e($slot); ?>](<?php echo e($url); ?>)
+<?php /**PATH /home/faddishbuilder/public_html/storemanager.faddishbuilder.com/vendor/laravel/framework/src/Illuminate/Mail/resources/views/text/header.blade.php ENDPATH**/ ?>

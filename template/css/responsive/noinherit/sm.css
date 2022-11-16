@@ -1,0 +1,81 @@
+body:not(.show-hidden) .sm-hide{
+    display: none !important;
+}
+.inrow.sm-left .incol.first{
+margin-left: 0 !important; 
+margin-top: 0 !important; 
+margin-bottom: 0 !important; 
+}
+.inrow.sm-center .incol.first{
+margin-left: 0 !important; 
+margin-right: 0 !important; 
+margin-top: 0 !important; 
+align-self:center;
+justify-content: center;
+}
+.inrow.sm-right .incol.first{
+margin-right: 0 !important; 
+margin-top: 0 !important; 
+margin-bottom: 0 !important; 
+}
+
+/**
+ * menu views
+ */
+ .sm-drop{
+    text-align: right;
+ }
+ .sm-drop .navcon {
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+    width: auto;
+}
+ .sm-vert .navcon{
+    width:auto;
+ }
+  .sm-vert .nav{
+    display: inline-flex;
+    flex-direction: column;
+ }
+ .sm-drop .nav {
+    display: inline-flex;
+    flex-direction: column;
+	position: absolute;
+	top: 100%;
+    left: 0;
+    right: unset;
+    z-index: 202;
+    background-color: rgb(255, 255, 255);
+}
+  .sm-drop .nav{
+    display:none;
+ }
+ .sm-drop.sm-right .nav{
+    right:0;
+    left:unset;
+ }
+   .sm-drop.active .nav{
+    display:block;
+ }
+.sm-subright {
+	left: auto;
+	right: 0;
+}
+.sm-vert .subnav, .sm-drop .subnav {
+	top: 0;
+	left: 100%;
+    right: auto;
+}
+.sm-vert .subnav.sm-subleft {
+	left: auto;
+    right: 100%;
+}
+  .sm-drop a.toggle{
+    display: block;
+    align-self: end;
+ }
+ .sm-drop .subnav {
+	position: static;
+	width: 100% !important;
+}

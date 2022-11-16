@@ -1,0 +1,7 @@
+[28-Sep-2022 06:43:17 UTC] PHP Deprecated:  Required parameter $path follows optional parameter $handlers in /home/store/public_html/vendor/paypal/rest-api-sdk-php/lib/PayPal/Transport/PayPalRestCall.php on line 53
+[28-Sep-2022 06:43:17 UTC] PHP Deprecated:  Required parameter $method follows optional parameter $handlers in /home/store/public_html/vendor/paypal/rest-api-sdk-php/lib/PayPal/Transport/PayPalRestCall.php on line 53
+[28-Sep-2022 06:43:17 UTC] PHP Deprecated:  Required parameter $prefix follows optional parameter $configs in /home/store/public_html/vendor/paypal/rest-api-sdk-php/lib/PayPal/Core/PayPalHttpConfig.php on line 286
+[28-Sep-2022 06:43:17 UTC] PHP Deprecated:  Required parameter $clientId follows optional parameter $config in /home/store/public_html/vendor/paypal/rest-api-sdk-php/lib/PayPal/Cache/AuthorizationCache.php on line 56
+[28-Sep-2022 06:43:17 UTC] PHP Deprecated:  Required parameter $accessToken follows optional parameter $config in /home/store/public_html/vendor/paypal/rest-api-sdk-php/lib/PayPal/Cache/AuthorizationCache.php on line 56
+[28-Sep-2022 06:43:17 UTC] PHP Deprecated:  Required parameter $tokenCreateTime follows optional parameter $config in /home/store/public_html/vendor/paypal/rest-api-sdk-php/lib/PayPal/Cache/AuthorizationCache.php on line 56
+[28-Sep-2022 06:43:17 UTC] PHP Deprecated:  Required parameter $tokenExpiresIn follows optional parameter $config in /home/store/public_html/vendor/paypal/rest-api-sdk-php/lib/PayPal/Cache/AuthorizationCache.php on line 56

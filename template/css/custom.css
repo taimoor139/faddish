@@ -1,0 +1,10 @@
+.input-group.inline.multi input {
+  width: 15px !important;
+  margin-right: 5px;
+}
+.input-group.inline.multi span {
+  width: calc(100% - 20px);
+}
+.input-group.inline.multi {
+  flex-wrap: wrap;
+}

@@ -1,0 +1,81 @@
+body:not(.show-hidden) .md-hide{
+    display: none !important;
+}
+.inrow.md-left .incol.first{
+margin-left: 0 !important; 
+margin-top: 0 !important; 
+margin-bottom: 0 !important; 
+}
+.inrow.md-center .incol.first{
+margin-left: 0 !important; 
+margin-right: 0 !important; 
+margin-top: 0 !important; 
+align-self:center;
+justify-content: center;
+}
+.inrow.md-right .incol.first{
+margin-right: 0 !important; 
+margin-top: 0 !important; 
+margin-bottom: 0 !important; 
+}
+
+/**
+ * menu views
+ */
+ .md-drop{
+    text-align: right;
+ }
+ .md-drop .navcon {
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+    width: auto;
+}
+ .md-vert .navcon{
+    width:auto;
+ }
+  .md-vert .nav{
+    display: inline-flex;
+    flex-direction: column;
+ }
+ .md-drop .nav {
+    display: inline-flex;
+    flex-direction: column;
+	position: absolute;
+	top: 100%;
+    left: 0;
+    right: unset;
+    z-index: 202;
+    background-color: rgb(255, 255, 255);
+}
+  .md-drop .nav{
+    display:none;
+ }
+ .md-drop.md-right .nav{
+    right:0;
+    left:unset;
+ }
+   .md-drop.active .nav{
+    display:block;
+ }
+.md-subright {
+	left: auto;
+	right: 0;
+}
+.md-vert .subnav, .md-drop .subnav {
+	top: 0;
+	left: 100%;
+    right: auto;
+}
+.md-vert .subnav.md-subleft {
+	left: auto;
+    right: 100%;
+}
+  .md-drop a.toggle{
+    display: block;
+    align-self: end;
+ }
+ .md-drop .subnav {
+	position: static;
+	width: 100% !important;
+}

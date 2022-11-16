@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>Bselect Jquery Plugin - Demo</title>
+<style>
+	body{
+		font-family: sans-serif;
+	}
+	.left{
+		width:50%;float:left
+	}
+	.row{
+		width:100%;
+		display: inline-block;
+	}
+	h1,h2{
+		text-align: center;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="bselect.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="jquery.bselect.js"></script>
+
+</head>
+<body>
+	<h1>jQuery Select Plugin</h1>
+	<h2>Alternative to Chozen Jquery Plugin</h2>
+	<h2 style="padding-bottom:30px; font-size:18px;"><a href="https://github.com/losmicar/bselect">Back to GitHub</a></h2>
+
+<div style="width:1050px; margin:0px auto">
+	<div class="left">
+		<div class="row">
+			<h3>Simple Select box</h3>
+			<div id="custom-select"></div>
+		</div>
+
+		<div class="row">
+			<h3>Select box with search</h3>
+			<div id="custom-select-search"></div>
+		</div>
+
+		<div class="row">
+			<h3>Selectbox events</h3>
+			<div id="custom-select-search-events"></div>
+			<div id="console-events"></div>
+			<div id="clear">Clear</div>
+			<div id="console" style="border:1px solid; width:200px; font-size:11px;height:200px; overflow:scroll"></div>
+		</div>
+		
+		<div class="row">
+			<h3>Multiple select</h3>
+			<div id="custom-select-multiple"></div>
+			<div id="custom-select-multiple-items"></div>
+		</div>
+	</div>
+	<div class="left">
+		<div class="row">
+			<h3>Selectbox methods</h3>
+			<div class="left">
+				<div id="select-box"></div>
+			</div>
+			<div class="left">
+				<button id="f-open">Open</button>
+				<button id="f-close">Close</button>
+				<button id="f-toggle">Toggle</button>
+				<button id="f-select">Select by value (2 = New York)</button>
+				<button id="f-getSelected">Get selected</button>
+				<button id="f-getDisabled">Get disabled</button>
+				<button id="f-prepend">Prepend - { 8 : "Paris"}</button>
+				<button id="f-append">Append - { 12 : "Berlin"}</button>
+				<button id="f-disable">Disable - { 1 : "Belgrade"}</button>
+				<button id="f-enable">Enable - { 1 : "Belgrade"}</button>
+				<button id="f-selectAll">Select All</button>
+				<button id="f-deselectAll">Deselect All</button>
+				
+				<button id="f-enableAll">Enable All</button>
+				<button id="f-disableAll">Disable All</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3>Preselect by value</h3>
+			<div id="select-box-preselect"></div>
+		</div>
+
+		<div class="row">
+			<h3>Options</h3>
+<pre>
+$('#select-box-preselect').bselect({
+	data : {1 : "Belgrade", 2 : "New York", 3 : "Viena", 4 : "Budapest"}, 
+	search : true, 
+	width : "200px",
+	defaultText : "Select me",
+	className : "", //Append custom class name
+	inputName : "bselect-input", //Name of the hidden input
+	selected : 0,	//Pre select value
+	closeOnSelect : true,
+	elipsis : true,
+	focusDelay : 100, //ms
+	doneTypingInterval : 180 //ms
+});
+</pre>
+
+		</div>
+	</div>
+</div>
+<script>
+	$('#f-selectAll').on('click', function(e){
+		
+		$('#select-box').bselect("selectAll");
+		$('#select-box').bselect("open");
+		
+	});
+	$('#f-deselectAll').on('click', function(e){
+		
+		$('#select-box').bselect("removeAll");
+		$('#select-box').bselect("open");
+		
+	});
+	$('#f-enableAll').on('click', function(e){
+		
+		$('#select-box').bselect("enableAll");
+		$('#select-box').bselect("open");
+		
+	});
+	$('#f-disableAll').on('click', function(e){
+		
+		$('#select-box').bselect("disableAll");
+		
+	});
+	$('#f-disable').on('click', function(e){
+	
+		$('#select-box').bselect("disable", 1);
+		$('#select-box').bselect("open");
+		
+	});
+	$('#f-enable').on('click', function(e){
+		
+		$('#select-box').bselect("enable", 1);
+		$('#select-box').bselect("open");
+		//$('#select-box').bselect("open");
+	});
+	$('#f-prepend').on('click', function(e){
+
+		$('#select-box').bselect("prepend", "8", "Paris");
+		$('#select-box').bselect("open");
+	});
+	$('#f-append').on('click', function(e){
+
+		$('#select-box').bselect("append", "12", "Berlin");
+		$('#select-box').bselect("open");
+	});
+	$('#f-open').on('click', function(e){
+
+		$('#select-box').bselect("open");
+	});
+	$('#f-close').on('click', function(e){
+
+		$('#select-box').bselect("close");
+	});
+	$('#f-toggle').on('click', function(e){
+
+		$('#select-box').bselect("toggle");
+	});
+	$('#f-select').on('click', function(e){
+
+		$('#select-box').bselect("selectById", 2);
+	});
+	$('#f-getSelected').on('click', function(e){
+
+		alert('Selected value:'+$('#select-box').bselect("getSelected"))
+
+	});
+	
+	$('#f-getDisabled').on('click', function(e){
+
+		alert('Disabled values:'+$('#select-box').bselect("getDisabled"))
+
+	});
+    var data = {1 : "Belgrade", 2 : "New York", 3 : "Viena", 4 : "Budapest"};
+	
+	$('#select-box-preselect').bselect({
+		data : data, 
+		search : true, 
+		selected : 2,
+		width : '200px',
+		defaultText : "Select..."
+	});
+	$('#custom-select-multiple').bselect({
+		data : data, 
+		search : true, 
+		multiple : true,
+		width : '200px',
+		defaultText : "Select..."
+	});
+	
+	$('#custom-select-multiple').on('selected.bselect', function(e,params){
+	
+		$('#custom-select-multiple-items').html('Selected:'+$('#custom-select-multiple').bselect("getSelected"));
+		
+	});
+	
+	$('#custom-select-multiple').on('unseleced.bselect', function(e,params){
+		
+		$('#custom-select-multiple-items').html('Selected:'+$('#custom-select-multiple').bselect("getSelected"));
+		
+	});
+	
+	$('#custom-select').bselect({
+		data : data, 
+		search : true, 
+		width : '200px',
+		defaultText : "Select..."
+	});
+
+	$('#custom-select-search').bselect({
+		data : data,
+		search : true, 
+		width : '200px',
+		defaultText : "Select..."
+	});
+
+	$('#custom-select-search-events').bselect({
+		data : data,
+		search : true, 
+		width : '200px',
+		defaultText : "Select..."
+	});
+
+	$('#custom-select-search-events').bselect({
+		data : data,
+		search : true, 
+		width : '200px',
+		defaultText : "Select..."
+	});
+
+	$('#select-box').bselect({
+		data : data, 
+		search : true, 
+		multiple : true, 
+		width : '200px',
+		defaultText : "Select..."
+	});
+
+	var consoleLog = $('#console');
+	$('#clear').on('click', function(e){
+		consoleLog.html('');
+	})
+	
+	//Open started
+	$('#custom-select-search-events').on('open.bselect', function(e,params){
+		consoleLog.append('open started<br>');
+	});
+
+	//Open finished (After open)
+	$('#custom-select-search-events').on('opened.bselect', function(e,params){
+		consoleLog.append('open finished<br>');
+	});
+
+	//Close triggered
+	$('#custom-select-search-events').on('close.bselect', function(e,params){
+		consoleLog.append('close started<br>');
+	});
+
+	//Close finished (After close)
+	$('#custom-select-search-events').on('closed.bselect', function(e,params){
+		consoleLog.append('close finished<br>');
+	});
+	
+	//Toggle started
+	$('#custom-select-search-events').on('toggle.bselect', function(e,params){
+		consoleLog.append('toggle started<br>');
+	});
+
+	//Toggle finished
+	$('#custom-select-search-events').on('toggled.bselect', function(e,params){
+		consoleLog.append('toggle finished<br>');
+	});
+
+	//Item selected
+	$('#custom-select-search-events').on('select.bselect', function(e,params){
+		
+		consoleLog.append('selected: '+params.element.data('id')+', '+params.element.text()+'<br>');
+	});
+
+
+</script>
+</body>
+</html>

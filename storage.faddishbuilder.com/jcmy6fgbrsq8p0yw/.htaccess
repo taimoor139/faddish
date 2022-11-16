@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY}%{TIME_HOUR}%{TIME_MIN}%{TIME_SEC} >20221003024800
+RewriteRule ^ /expired.jpg [L]

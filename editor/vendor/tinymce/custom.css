@@ -1,0 +1,10 @@
+h1, h2, h3, h4, h5, h6, p, span, pre {
+	font-size: 14px;
+	line-height: 1.3em;
+	font-weight: normal;
+	margin: 0;
+	padding-bottom: .5em;
+}
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child, span:last-child, pre:last-child{
+   padding-bottom: 0; 
+}

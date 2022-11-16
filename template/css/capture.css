@@ -1,0 +1,14 @@
+#toolbarContainer {
+        	display: none;
+}
+.mapcon iframe{
+    display: none;
+}     
+.mapcon::after {
+	content: "";
+	background-image: url("/editor/images/map_placeholder.jpg");
+	width: 100%;
+	min-height: 550px;
+	display: block;
+	background-size: cover;
+}
